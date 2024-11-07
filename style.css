@@ -1,0 +1,273 @@
+body{
+   
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.login-box{
+
+    width: 700px;
+    justify-content: flex-end;
+    align-items: center;
+    display: flex;
+    /* height: 350px; */
+    margin: auto;
+    /* color: white; */
+    
+    position: relative;
+    overflow: hidden;
+   top: 40px;
+
+    /* background: rgb(36, 185, 185); */
+    
+}
+
+
+.login-box #login-form,#rigster-form{
+    color :rgb(36, 185, 185);
+    font-weight: bold;
+    width: 50%;
+    margin: 10px;
+    position: relative;
+    transition: .4s;
+
+    /* margin:auto; */
+}
+.login-box #rigster-form{
+    position: absolute;
+    right: -100%;
+}
+
+
+
+
+
+.login-box::before{
+
+    position: absolute;
+    content: "";
+    width: 325px;
+    height: 100%;
+    background: rgb(36, 185, 185);
+    z-index: -1;
+    left: -20%;
+    top: 2%;
+    transform: rotateZ(43deg);
+    /* transition: .3s; */
+
+}
+
+@media screen and (max-width:710px){
+    .login-box::before{
+
+        width: 0;
+        height: 0;
+       
+    }
+    .login-box{
+        margin: 10px;
+        justify-content: center;
+        transition: .4s;
+        border-radius: 10px;
+      
+    }
+
+    .login-box #login-form{
+      transition: .4s;
+        width: 80%;
+        padding: 12px;
+        margin: 10px;
+    }
+    .login-box #rigster-form
+    {
+        transition: .4s;
+        width: 80%;
+        padding: 12px;
+        margin: 10px;
+        /* right: 0; */
+        /* left: 0; */
+        margin: auto;
+      
+
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+.login-box #login-form .line{
+    
+    width: 50px;
+    height: 1%;
+    background: rgb(36, 185, 185);
+    margin: auto;
+    position: relative;
+    top: 5px;
+}
+.login-box #login-form  h3,.login-box #rigster-form h3 {
+
+    color :rgb(36, 185, 185);
+    font-weight: bold;
+}
+.login-box #login-form .icon,
+.login-box #rigster-form .icon{
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.login-box #login-form .icon .incons,
+.login-box #rigster-form .icon .incons{
+    margin:0 10px;
+    /* background:rgb(36, 185, 185);
+    color: white; */
+    padding: 10px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    transition: .4s;
+    justify-content: center;
+    position: relative;
+    overflow: hidden;
+    font-size: 20px;
+}
+
+.login-box #login-form .icon .incons::before,
+.login-box #rigster-form .icon .incons::before{
+    
+    position: absolute;
+    content: "";
+    height: 100%;
+    width: 100%;
+    border-radius: 50%;
+    background: rgb(36, 185, 185);
+    z-index: -1;
+    bottom: -100%;
+    transition: .3s;
+ 
+}
+.login-box #login-form .icon .incons:hover,
+.login-box #rigster-form .icon .incons:hover{
+
+    color: white;
+    transform: translateY(-6px);
+}
+.login-box #login-form .icon .incons:hover::before,
+.login-box #rigster-form .icon .incons:hover::before{
+
+    bottom: 0;
+
+}
+
+
+
+.login-box #login-form .form-group,.login-box #rigster-form .form-group{
+
+        position: relative;
+        /* background: white; */
+        /* transition: .3s; */
+        /* background: #000; */
+        
+}
+.login-box #login-form .form-group label,
+.login-box #rigster-form .form-group label{
+
+
+ 
+    transition: .2s;
+    position: absolute;
+    top: 7px;
+    left: 3%;
+    /* background: white; */
+
+}
+.login-box #login-form form .form-group i,
+.login-box #rigster-form .form-group i {
+ 
+    position: absolute;
+    right: 3%;
+    top: 10px;
+    font-size: 18px;
+    font-weight: bold;
+    cursor: pointer;
+
+}
+
+
+.login-box #login-form .form-group input:focus ~ label,
+.login-box #login-form .form-group 
+input:valid ~label,
+.login-box #rigster-form .form-group input:focus ~label,
+.login-box #rigster-form .form-group input:valid ~ label
+{
+
+    transition: .2s;
+    top: -30%;
+    background: white;
+
+
+}
+
+.login-box #login-form input,
+.login-box #rigster-form  input{
+    box-shadow: none;
+    border: 1px solid rgb(36, 185, 185);
+    border-radius: 10px;
+    color: rgb(36, 185, 185);
+    /* transition: .5s; */
+    /* background: #000; */
+}
+
+.login-box #login-form input:focus,
+.login-box #login-form input:valid,
+.login-box #rigster-form  input:focus,
+.login-box #rigster-form  input:valid{
+
+    border: 2px solid rgb(36, 185, 185);
+
+
+}
+.login-box #login-form span,
+.login-box #rigster-form span{
+    color: rgb(36, 185, 185);
+    font-size: 17px;
+    margin: 0 10px;
+    border-bottom: 1px solid rgb(36, 185, 185);
+    cursor: pointer;
+}
+.login-box #login-form button,
+.login-box #rigster-form button{
+    background: rgb(36, 185, 185);
+    color: white;
+    font-weight: bold;
+ 
+
+}
+.login-box #login-form button:focus,
+.login-box #rigster-form button:focus{
+    box-shadow: none;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
